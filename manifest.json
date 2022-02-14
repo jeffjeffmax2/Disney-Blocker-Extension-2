@@ -15,7 +15,7 @@
   "permissions": [
     "activeTab",
     "tabs",
-    "https://www.disneyplus.com/en-gb/home/*"
+    "https://www.disneyplus.com/home/*"
   ],
   "background": {
     "scripts": ["buttonFunction.js"],
@@ -23,7 +23,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.disneyplus.com/en-gb/home/*"],
+      "matches": ["https://www.disneyplus.com/home/*"],
       "css": ["custom-styles.css"],
       "js": ["showShameMessage.js"],
       "run_at": "document_end"
